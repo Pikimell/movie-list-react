@@ -3,10 +3,9 @@ import axios from "axios";
 import {useDispatch, useSelector} from "react-redux";
 
 import {loadFilmsFromDB, setTotalPage, setTotalResult} from "../../store/FilmReducer";
-import {APIKey, baseUrl} from "../../global_const";
+import {APIKey, baseUrl, langQuery} from "../../global_const";
 import ListFilms from "./ListFilms/ListFilms";
 import NavigationBlock from "./NavigationBlock/NavigationBlock";
-
 
 const Body = () => {
     const dispatch = useDispatch();
@@ -18,7 +17,7 @@ const Body = () => {
             params: {
                 api_key: APIKey,
                 page: selectPage,
-                language: 'ru'
+                language: langQuery
             }
         }).then(res=>{
             let films = res.data.results
@@ -31,12 +30,9 @@ const Body = () => {
         })
     }
 
-
-
     useEffect(()=> {
         loadData().then()
     })
-
 
     return (
         <div className={'bodyPage'}>

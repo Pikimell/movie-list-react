@@ -1,0 +1,30 @@
+.filmDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2vw;
+    width: 75vw;
+    min-width: 900px;
+}
+
+.filmDetails > img {
+    border-radius: 10%;
+}
+
+.filmDescription{
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    overflow-y:auto;
+}
+
+.filmDescription > p, ul>li{
+    font-size: 20px;
+}
+
+.videoPlayer{
+    width: 70vw;
+    min-height: 40vw;
+    margin-bottom: 50px;
+}

@@ -1,8 +1,9 @@
-import {APIKey,accessToken,baseUrl,baseUrlImage} from './constApi'
+import {APIKey,accessToken,baseUrl,baseUrlImage, langQuery} from './constApi'
 
 export {
     APIKey,
     accessToken,
     baseUrl,
-    baseUrlImage
+    baseUrlImage,
+    langQuery
 }

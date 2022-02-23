@@ -3,3 +3,5 @@ export const accessToken = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYjBkMmNiODczZWNkY2Y
 
 export const baseUrl = 'https://api.themoviedb.org/3/movie'
 export const baseUrlImage = 'https://image.tmdb.org/t/p/w500'
+
+export const langQuery = 'en' //'uk' //'ru'

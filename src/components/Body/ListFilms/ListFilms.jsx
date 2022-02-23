@@ -12,6 +12,7 @@ const ListFilms = ({films}) => {
                         date={film.release_date}
                         rating={film.vote_average}
                         overview={film.overview}
+                        filmId={film.id}
                         key={film.id}
                     />
                 })
