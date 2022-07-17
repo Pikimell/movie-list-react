@@ -5,7 +5,6 @@ import {useDispatch, useSelector} from "react-redux";
 import {loadFilmsFromDB, setTotalPage, setTotalResult} from "../../store/FilmReducer";
 import {APIKey, baseUrl, langQuery} from "../../global_const";
 import ListFilms from "./ListFilms/ListFilms";
-import NavigationBlock from "./NavigationBlock/NavigationBlock";
 
 const Body = () => {
     const dispatch = useDispatch();
@@ -37,7 +36,7 @@ const Body = () => {
     return (
         <div className={'bodyPage'}>
             <ListFilms films={films}/>
-            <NavigationBlock selectPage={selectPage} loadData={loadData}/>
+            <Button/>
         </div>
     );
 };

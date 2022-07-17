@@ -6,6 +6,7 @@ import Body from "./components/Body";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import FilmDetails from "./components/FilmDetails/FilmDetails";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
     render() {
